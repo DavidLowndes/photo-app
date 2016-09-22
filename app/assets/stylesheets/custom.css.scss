@@ -95,17 +95,6 @@ body {
 
 /* Home Page */
 
-.features {
-  ul {
-    margin-left: 0;
-    margin-bottom: 4px;
-    padding-left: 15px;
-  }
-  .extra {
-    font-weight: bold;
-  }
-}
-
 .jumbotron {
   text-align: center;
   background-image: asset-url('Portrait-of-happy-smiling-man-isolated-on-white-Stock-Photo-face.jpg');
@@ -125,6 +114,27 @@ body {
     .lead {
       font-size: 40px !important;
     }
+  }
+}
+
+.well {
+  padding: 10px;
+}
+
+.plans {
+  h2 {
+    margin-top: 10px;
+  }
+}
+
+.features {
+  ul {
+    margin-left: 0;
+    margin-bottom: 4px;
+    padding-left: 15px;
+  }
+  .extra {
+    font-weight: bold;
   }
 }
 .price {

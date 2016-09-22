@@ -1,5 +1,5 @@
 <% if current_user %>
-  <h3>Welcome <%= current_user.email %></h3>
+  <h3>Thanks for signing up, <%= current_user.email %>. I have your soul now.</h3>
 <% else %>
   <div class="jumbotron">
     <h2>
@@ -12,7 +12,7 @@
     </p>
   </div>
   <div class="row">
-    <div class="row plans well col-md-8 col-md-offset-2">
+    <div class="row well plans col-md-8 col-md-offset-2">
       <div class="col-sm-6 plan">
         <h2>Premium Plan</h2>
         <div class="features">
@@ -29,7 +29,7 @@
           <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-warning sign-up' %>
         </p>
       </div>
-      <div class="col-sm-6 plan">
+      <div class="col-sm-5 plan">
         <h2>Amazing Plan</h2>
         <div class="features">
           <ul>
