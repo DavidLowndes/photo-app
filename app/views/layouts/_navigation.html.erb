@@ -5,13 +5,11 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a id="logo" class="navbar-brand" href="#">PhotoApp</a>
+    <%= link_to 'PhotoApp', root_path, id: 'logo', class: 'navbar-brand' %>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <!-- Left Navbar -->
       <ul class="nav navbar-nav">
-        <li><%= link_to "Log out", destroy_user_session_path, method: :delete  %></li>
-        <li><%= link_to "Sign up", new_user_registration_path %></li>
-        <li><%= link_to "Link3", "/path3"  %></li>
+        <li><%= link_to "Filler Link", "/"  %></li>
       </ul>
       <!-- Right Navbar -->
       <ul class="nav navbar-right col-md-4">
@@ -24,7 +22,7 @@
           </li>
       <% else %>
         <li class="col-md-4 pull-right">
-          <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
+          <%= link_to('Sign In', new_user_session_path, class: 'btn btn-default btn-md btn-sign-in', title: 'Sign In') %>
         </li>
       <% end %>
       </ul>
